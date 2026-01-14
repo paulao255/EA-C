@@ -30,7 +30,7 @@ int main(void)
 		{
 			if(character >= 33u && character <= 126u)
 			{
-				if(character <= 99)
+				if(character <= 99u)
 				{
 					printf(" %d = %c ", (int)character, character);
 				}
@@ -43,12 +43,12 @@ int main(void)
 
 			else
 			{
-				if(character <= 9)
+				if(character <= 9u)
 				{
 					printf("  %d =   ", (int)character);
 				}
 
-				else if(character <= 32)
+				else if(character <= 32u)
 				{
 					printf(" %d =   ", (int)character);
 				}
