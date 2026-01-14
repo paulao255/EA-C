@@ -7,18 +7,18 @@
 #include <stdio.h>
 
 
+/* EA version variables: */
+#define EA_FULL_VERSION  20260114 /* Extended Ascii full version variable.  */
+#define EA_MAJOR_VERSION 2026     /* Extended Ascii major version variable. */
+#define EA_MINOR_VERSION 01       /* Extended Ascii minor version variable. */
+#define EA_PATCH_VERSION 14       /* Extended Ascii patch version variable. */
+
 /* Main code: */
 int main(void)
 {
-	/* Version variables: */
-	#define EA_FULL_VERSION  20260114 /* Extended Ascii full version variable.  */
-	#define EA_MAJOR_VERSION 2026     /* Extended Ascii major version variable. */
-	#define EA_MINOR_VERSION 01       /* Extended Ascii minor version variable. */
-	#define EA_PATCH_VERSION 14       /* Extended Ascii patch version variable. */
-
 	/* Local variables: */
-	unsigned char character = 0u;     /* Stored character variable.             */
-	int times = 0;                    /* Times to print variable.               */
+	unsigned char character = 0u; /* Stored character variable.             */
+	int times = 0;                /* Times to print variable.               */
 
 	/* Commands before main loop: */
 	clear_terminal();
