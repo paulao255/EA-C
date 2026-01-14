@@ -1,27 +1,27 @@
 /* Include guard: */
-#ifndef EXTENDED_ASCII_C
-#define EXTENDED_ASCII_C
+#ifndef EA_C
+#define EA_C
 
 /* Importations: */
-#include <cutils.h>
+#include "C-Utils/cutils.h"
 #include <stdio.h>
 
 
 /* Main code: */
-int main()
+int main(void)
 {
 	/* Version variables: */
-	#define EXTENDED_ASCII_FULL_VERSION  100.0L /* Extended Ascii full version variable.  */
-	#define EXTENDED_ASCII_MAJOR_VERSION   1.0L /* Extended Ascii major version variable. */
-	#define EXTENDED_ASCII_MINOR_VERSION   0.0L /* Extended Ascii minor version variable. */
-	#define EXTENDED_ASCII_PATCH_VERSION   0.0L /* Extended Ascii patch version variable. */
+	#define EA_FULL_VERSION  20260114 /* Extended Ascii full version variable.  */
+	#define EA_MAJOR_VERSION 2026     /* Extended Ascii major version variable. */
+	#define EA_MINOR_VERSION 01       /* Extended Ascii minor version variable. */
+	#define EA_PATCH_VERSION 14       /* Extended Ascii patch version variable. */
 
 	/* Local variables: */
-	unsigned char character = 0u;               /* Stored character variable.             */
-	int times = 0;                              /* Times to print variable.               */
+	unsigned char character = 0u;     /* Stored character variable.             */
+	int times = 0;                    /* Times to print variable.               */
 
 	/* Commands before main loop: */
-	CLEAR_TERMINAL();
+	clear_terminal();
 
 	/* Main loop: */
 	while(character <= 251)
